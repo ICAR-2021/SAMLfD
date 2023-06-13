@@ -25,7 +25,7 @@ def min_jerk_step(x, xd, xdd, goal, tau, dt):
   # ported from matlab dmp toolbox
 
   if tau < dt:
-    raise Exception, "time left (tau) is smaller than current time (dt) - end of traj reached!" 
+    raise (Exception, "time left (tau) is smaller than current time (dt) - end of traj reached!") 
 
   dist = goal - x
 
